@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Modern Hospital Website with Specializations"
+    />
+    <title>Sara Yasmin Hospital</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sara Yasmin Hospital</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#specializations">Specializations</a></li>
+          <li><a href="#doctors">Our Doctors</a></li>
+          <li><a href="#booking">Patient Registration</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="darkModeToggle">Toggle Dark Mode</button>
+    </header>
+
+    <main>
+      <section id="home">
+        <h2>Welcome to Sara Yasmin Hospital</h2>
+        <p>
+          We provide the highest quality healthcare with compassion and advanced
+          technology.
+        </p>
+        <div class="hero-image">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1681843129112-f7d11a2f17e3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Hospital Image"
+            class="main-image"
+          />
+        </div>
+      </section>
+
+      <section id="specializations">
+        <h2>Our Specializations</h2>
+        <div class="specialization-list">
+          <div class="specialization" data-fee="100">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1714618809801-99333390d75a?q=80&w=2088&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="General Medicine"
+              class="specialization-image"
+            />
+            <h3>General Medicine</h3>
+            <p>
+              Comprehensive primary care for all ages with expert diagnostics
+              and treatment.
+            </p>
+          </div>
+          <div class="specialization" data-fee="150">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1702598792640-38742c472f46?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Gynaecology"
+              class="specialization-image"
+            />
+            <h3>Gynaecology</h3>
+            <p>Expert care for women's health and maternity services.</p>
+          </div>
+          <div class="specialization" data-fee="200">
+            <img
+              src="https://images.unsplash.com/photo-1631563018856-81be9c118283?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Radiology"
+              class="specialization-image"
+            />
+            <h3>Radiology</h3>
+            <p>
+              Advanced imaging and diagnostic services with state-of-the-art
+              equipment.
+            </p>
+          </div>
+          <div class="specialization" data-fee="180">
+            <img
+              src="https://images.unsplash.com/photo-1713085085470-fba013d67e65?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Dermatology"
+              class="specialization-image"
+            />
+            <h3>Dermatology</h3>
+            <p>
+              Skin care treatments and consultations for all skin conditions.
+            </p>
+          </div>
+          <div class="specialization" data-fee="250">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1682795706664-248cbb76f1c9?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Neurology"
+              class="specialization-image"
+            />
+            <h3>Neurology</h3>
+            <p>Specialized care for brain and nervous system disorders.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="doctors" class="menu">
+        <h2>Our Medical Staff</h2>
+
+        <!-- General Medicine Staff -->
+        <div
+          class="menu-item"
+          data-department="General Medicine"
+          data-fee="100"
+        >
+          <h3>General Medicine</h3>
+          <select class="staff-select" data-target="general-medicine">
+            <option value="">Select a staff member</option>
+            <option
+              value="dr_johnson"
+              data-name="Dr. Michael Johnson"
+              data-department="General Medicine"
+              data-qualification="MD, Internal Medicine"
+              data-experience="15 years"
+              data-image="https://placehold.co/200x200?text=Dr.+Johnson"
+            >
+              Dr. Michael Johnson
+            </option>
+            <option
+              value="dr_davis"
+              data-name="Dr. Emma Davis"
+              data-department="General Medicine"
+              data-qualification="MD, Family Medicine"
+              data-experience="10 years"
+              data-image="https://placehold.co/200x200?text=Dr.+Davis"
+            >
+              Dr. Emma Davis
+            </option>
+            <option
+              value="nurse_wilson"
+              data-name="Nurse Lisa Wilson"
+              data-department="General Medicine"
+              data-qualification="BSN, Registered Nurse"
+              data-experience="8 years"
+              data-image="https://placehold.co/200x200?text=Nurse+Wilson"
+            >
+              Nurse Lisa Wilson
+            </option>
+          </select>
+          <div id="general-medicine" class="staff-info"></div>
+        </div>
+
+        <!-- Gynaecology Staff -->
+        <div class="menu-item" data-department="Gynaecology" data-fee="150">
+          <h3>Gynaecology</h3>
+          <select class="staff-select" data-target="gynaecology">
+            <option value="">Select a staff member</option>
+            <option
+              value="dr_patel"
+              data-name="Dr. Sonia Patel"
+              data-department="Gynaecology"
+              data-qualification="MD, Obstetrics & Gynaecology"
+              data-experience="12 years"
+              data-image="https://placehold.co/200x200?text=Dr.+Patel"
+            >
+              Dr. Sonia Patel
+            </option>
+            <option
+              value="dr_thompson"
+              data-name="Dr. Rachel Thompson"
+              data-department="Gynaecology"
+              data-qualification="MD, Reproductive Endocrinology"
+              data-experience="14 years"
+              data-image="https://placehold.co/200x200?text=Dr.+Thompson"
+            >
+              Dr. Rachel Thompson
+            </option>
+            <option
+              value="nurse_garcia"
+              data-name="Nurse Maria Garcia"
+              data-department="Gynaecology"
+              data-qualification="BSN, Women's Health Nurse"
+              data-experience="9 years"
+              data-image="https://placehold.co/200x200?text=Nurse+Garcia"
+            >
+              Nurse Maria Garcia
+            </option>
+          </select>
+          <div id="gynaecology" class="staff-info"></div>
+        </div>
+
+        <!-- Radiology Staff -->
+        <div class="menu-item" data-department="Radiology" data-fee="200">
+          <h3>Radiology</h3>
+          <select class="staff-select" data-target="radiology">
+            <option value="">Select a staff member</option>
+            <option
+              value="dr_chen"
+              data-name="Dr. Wei Chen"
+              data-department="Radiology"
+              data-qualification="MD, Diagnostic Radiology"
+              data-experience="16 years"
+              data-image="https://placehold.co/200x200?text=Dr.+Chen"
+            >
+              Dr. Wei Chen
+            </option>
+            <option
+              value="dr_murphy"
+              data-name="Dr. James Murphy"
+              data-department="Radiology"
+              data-qualification="MD, Interventional Radiology"
+              data-experience="11 years"
+              data-image="https://placehold.co/200x200?text=Dr.+Murphy"
+            >
+              Dr. James Murphy
+            </option>
+            <option
+              value="tech_rodriguez"
+              data-name="Carlos Rodriguez"
+              data-department="Radiology"
+              data-qualification="BS, Radiologic Technology"
+              data-experience="7 years"
+              data-image="https://placehold.co/200x200?text=Tech+Rodriguez"
+            >
+              Technician Carlos Rodriguez
+            </option>
+          </select>
+          <div id="radiology" class="staff-info"></div>
+        </div>
+
+        <!-- Dermatology Staff -->
+        <div class="menu-item" data-department="Dermatology" data-fee="180">
+          <h3>Dermatology</h3>
+          <select class="staff-select" data-target="dermatology">
+            <option value="">Select a staff member</option>
+            <option
+              value="dr_kim"
+              data-name="Dr. Yuna Kim"
+              data-department="Dermatology"
+              data-qualification="MD, Dermatology"
+              data-experience="13 years"
+              data-image="https://placehold.co/200x200?text=Dr.+Kim"
+            >
+              Dr. Yuna Kim
+            </option>
+            <option
+              value="dr_taylor"
+              data-name="Dr. William Taylor"
+              data-department="Dermatology"
+              data-qualification="MD, Cosmetic Dermatology"
+              data-experience="9 years"
+              data-image="https://placehold.co/200x200?text=Dr.+Taylor"
+            >
+              Dr. William Taylor
+            </option>
+            <option
+              value="nurse_brown"
+              data-name="Nurse Ashley Brown"
+              data-department="Dermatology"
+              data-qualification="BSN, Dermatology Nursing"
+              data-experience="6 years"
+              data-image="https://placehold.co/200x200?text=Nurse+Brown"
+            >
+              Nurse Ashley Brown
+            </option>
+          </select>
+          <div id="dermatology" class="staff-info"></div>
+        </div>
+
+        <!-- Neurology Staff -->
+        <div class="menu-item" data-department="Neurology" data-fee="250">
+          <h3>Neurology</h3>
+          <select class="staff-select" data-target="neurology">
+            <option value="">Select a staff member</option>
+            <option
+              value="dr_sharma"
+              data-name="Dr. Raj Sharma"
+              data-department="Neurology"
+              data-qualification="MD, Neurology"
+              data-experience="18 years"
+              data-image="https://placehold.co/200x200?text=Dr.+Sharma"
+            >
+              Dr. Raj Sharma
+            </option>
+            <option
+              value="dr_anderson"
+              data-name="Dr. Emily Anderson"
+              data-department="Neurology"
+              data-qualification="MD, Neurophysiology"
+              data-experience="12 years"
+              data-image="https://placehold.co/200x200?text=Dr.+Anderson"
+            >
+              Dr. Emily Anderson
+            </option>
+            <option
+              value="nurse_jackson"
+              data-name="Nurse Daniel Jackson"
+              data-department="Neurology"
+              data-qualification="BSN, Neuroscience Nursing"
+              data-experience="8 years"
+              data-image="https://placehold.co/200x200?text=Nurse+Jackson"
+            >
+              Nurse Daniel Jackson
+            </option>
+          </select>
+          <div id="neurology" class="staff-info"></div>
+        </div>
+      </section>
+
+      <section id="booking">
+        <h2>Patient Registration Form</h2>
+        <form id="patientForm">
+          <div class="form-group">
+            <label for="patientName">Full Name:</label>
+            <input type="text" id="patientName" name="patientName" required />
+            <span class="error" id="nameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required />
+            <span class="error" id="contactError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required />
+            <span class="error" id="dobError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="symptoms">Disease Symptoms:</label>
+            <textarea id="symptoms" name="symptoms" required></textarea>
+            <span class="error" id="symptomsError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="department">Select Department:</label>
+            <select id="department" name="department" required>
+              <option value="">Select</option>
+              <option value="General Medicine" data-fee="100">
+                General Medicine
+              </option>
+              <option value="Gynaecology" data-fee="150">Gynaecology</option>
+              <option value="Radiology" data-fee="200">Radiology</option>
+              <option value="Dermatology" data-fee="180">Dermatology</option>
+              <option value="Neurology" data-fee="250">Neurology</option>
+            </select>
+            <span class="error" id="departmentError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="doctor">Choose Doctor:</label>
+            <select id="doctor" name="doctor" required>
+	      <option value="">First select a department</option>
+	      <option value="dr_johnson">Dr. Michael Johnson</option>
+	      <option value="dr_davis">Dr. Emma Davis</option>
+ 	      <option value="nurse_wilson">Nurse Lisa Wilson</option>
+	      <option value="dr_patel">Dr. Sonia Patel</option>
+	      <option value="dr_thomson">Dr. Rachel Thompson</option>
+  	      <option value="nurse_garcia">Nurse Maria Garcia</option>
+	      <option value="dr_chen">Dr. Wei Chen</option>
+	      <option value="technician_rodriguez">Technician Carlos Rodriguez</option>
+	      <option value="dr_kim">Dr. Yuna Kim</option>
+	      <option value="dr_taylor">Dr. William Taylor</option>
+	      <option value="dr_sharma">Dr. Raj Sharma</option>
+	      <option value="dr_anderson">Dr.Emily Anderson </option>
+              <option value="nurse_jackson">Nurse Daniel Jackson Brown</option>
+            </select>
+            <span class="error" id="doctorError"></span>
+          </div>
+          <div class="form-group">
+            <label for="patientType">Patient Type:</label>
+            <select id="patientType" name="patientType" required>
+              <option value="">Select</option>
+              <option value="IP">In-Patient (IP)</option>
+              <option value="OP">Out-Patient (OP)</option>
+            </select>
+            <span class="error" id="patientTypeError"></span>
+          </div>
+          <div id="roomSelection" class="form-group" style="display: none">
+            <label for="roomType">Select Room Type:</label>
+            <select id="roomType" name="roomType">
+              <option value="">Select</option>
+              <option value="General" data-price="100">
+                General Ward - $100/day
+              </option>
+              <option value="Semi-Private" data-price="200">
+                Semi-Private Room - $200/day
+              </option>
+              <option value="Private" data-price="400">
+                Private Room - $400/day
+              </option>
+            </select>
+            <label for="days">Number of Days:</label>
+            <input type="number" id="days" name="days" min="1" value="1" />
+            <span class="error" id="roomError"></span>
+          </div>
+          <button type="submit">Submit Registration</button>
+        </form>
+        <div id="output" class="bill-summary"></div>
+      </section>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+          <p><strong>Email:</strong> contact@healinghands.com</p>
+          <p><strong>Phone:</strong> +123 456 7890</p>
+          <p><strong>Address:</strong> 123 Health Street, Wellness City</p>
+          <p><strong>Emergency:</strong> +123 999 8888 (24/7)</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Sara Yasmin Hospital. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
